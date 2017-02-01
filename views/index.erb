@@ -1,0 +1,8 @@
+<h1>Hogwarts Enrolement</h1>
+
+<% for student in @students%>
+<p>Name: <%= student.student_name()%></p>
+<p> <a href="/hogwarts/<%=student.id %>">Show Details</a>
+</p>
+<hr/>
+<%end%>
